@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Virtual class
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/calculate.js"></script>
+        <style>
+            .jj {
+  width: 100px;
+  height: 190px;
+  
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.jj:hover {
+  width: 100px;
+  height: 200px;
+  -webkit-transform: rotate(180deg); /* Safari */
+  transform: rotate(360deg);
+}
+          nav ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              width: 100%;
+              background-color: #333;
+              position: -webkit-sticky; /* Safari */
+              position: sticky;
+              top: 0;
+            }
+            
+            li {
+              float: left;
+            }
+            
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            li a:hover {
+              background-color:#4CAF50;
+            }
+            
+            .active {
+              background-color: #4CAF50;
+            }
+
+            .vid{
+                float:left;
+                width:30%;
+                height:420px;
+                border: 3px solid rgb(0, 0, 0);
+                background-color: lightgrey;  
+                border-radius: 8px;
+                margin-top: 1px;
+                box-shadow: 10px;
+                padding:3px;
+               
+            }
+            .art{
+                float:left;
+                width:68.8%;
+                height:423px;
+                margin-left: 2px;
+                margin-top: 0px;
+                border: 3px solid rgb(0, 0, 0);
+                background-color: lightgrey; 
+                border-radius: 8px; 
+                margin-top: 1px;
+                box-shadow: 10px;
+                
+            }
+            .add{
+                margin-left: 0px;
+                float:left;
+                width:20%;
+                height:420px;
+               
+                padding-left: 85px;
+                
+                background-color: lightgrey;  
+              
+            }
+            .sma
+            {
+                width:65%;
+                float:left;
+            }
+            .order {
+  position: absolute;
+  top: 50px;
+ 
+  left: 50px;
+  width: 110px;
+  line-height: 75px;
+  text-align:center;
+  opacity: 0.6;
+  filter: alpha(opacity=50);
+  background-color: rgb(77, 77, 241);
+  
+  border-radius:50%;
+  -webkit-animation: bounce .3s infinite alternate;
+  -moz-animation: bounce .3s infinite alternate;
+  animation: bounce .3s infinite alternate;
+}
+@-webkit-keyframes bounce {
+  to { -webkit-transform: scale(1.2); }
+}
+@-moz-keyframes bounce {
+  to { -moz-transform: scale(1.2); }
+}
+@keyframes bounce {
+  to { transform: scale(1.2); }
+}
+            .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color :slategray;
+  color: black;
+  text-align: center;
+}
+
+            </style>
+          
+    </head>
+    <body background="media/b.jpg">
+        <header style=" background-image: url(media/z.gif);  height: 30%;">
+            <br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br>
+           <h1  style="color:white; font-family:verdana;"> <marquee behavior="alternate">LIVE VIRTUAL CLASSES </marquee></h1>
+           <br>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="courses.html">ALL COURSES</a></li>
+                <li><a href="gallary.html">GALLARY</a></li>
+                <li><a href="#">REGISTERATION</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="student.html">STUDENT</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="quiz.html">QUIZ</a></li>
+
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <div class="spann">
+                    <div class="vid" >
+                        <p><h2>LET'S HAVE A LOOK : WHAT WE OFFER!</h2></p><br>
+                        <iframe   width="98%" height="70%" src="https://www.youtube.com/embed/ojDIEGAuZaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <br><br>
+                    </div>
+                    <div class="art" >
+                        <div class="sma">
+                            <p>
+                               <table><form  name="frm1" method="POST">
+                                 <tr><td>
+
+                                 </td><td><p id="dem" ></p></td></tr>
+                                 <tr>
+                                   <td>NAME:</td>
+                                   <td><input type="text" name="n" placeholder="NAME" onkeyup="name1(this.value)">* </td>
+                                   <td><p id="demo1" ></p></td>
+                                   
+                                 </tr>
+                                 
+                                 <tr>
+                                  <td>EMAIL:</td>
+                                  <td><input type="email" name="n1" placeholder="EMAIL" onkeypress="">*</td>
+                                  <td></td>
+                                </tr>
+                                <br>
+                                <tr>
+                                  <td>PASSWORD:</td>
+                                  <td><input type="password" name="n2" id="myInput" placeholder="PASSWORD" onkeyup="name2(this.value)">*&nbsp;<input type="checkbox" onclick="myFun()">Show Password</td>
+                                  <td><p id="demo2" ></p></td>
+                                </tr>
+                                <tr>
+                                  <td>MOBILE:</td>
+                                  <td><input type="number" name="n3" placeholder="PHONE" onkeypress="">*</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td></td>
+                                  <td>
+                                    <input type="button" value="SUBMIT" onclick="fff()" ></td>
+                                  
+                                </tr>
+                                <tr></tr>
+                               <tr>
+                              <td>
+                              <input id="search" type="search" placeholder="Search here">
+                              <select name="website" id="webs" >
+                                <option value="www.google.com">GOOGLE</option>
+                                <option value="www.yahoo.com">YAHOO</option>
+                                <option value="www.bingo.com">BINGO</option>
+                              </select>
+                              <input type="button" value="Search" onclick="redirect()" >
+                            </td>
+                            <tr>
+                            <td>
+                              <input type="button" value="prompt" onclick="myFunction()"></input></td>
+                              <td><p id="de"></p></td> 
+                             </tr>
+                            </form ></table>
+                            </p>
+                        </div>
+                     
+                   
+                    <div class="add" >
+                    <h2>ADVERTISEMENT:</h2>
+                    <div class="w3-container">
+                       <img src="media/4.jpg" height="350px" width="350px" >
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="order"><p class="jj" style=" color:#fff;">REGISTER YOURSELF NOW!!</p></div>
+            </article>
+           
+        </section>
+       
+        <footer>
+<div class="footer">
+    <p>&copy;2020 ASHUTOSH ANEJA</p>
+</div>
+        </footer>
+    </body>
+</html>

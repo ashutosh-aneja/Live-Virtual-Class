@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Virtual class
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .jj {
+  width: 100px;
+  height: 190px;
+  
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.jj:hover {
+  width: 100px;
+  height: 200px;
+  -webkit-transform: rotate(180deg); /* Safari */
+  transform: rotate(360deg);
+}
+          nav ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              width: 100%;
+              background-color: #333;
+              position: -webkit-sticky; /* Safari */
+              position: sticky;
+              top: 0;
+            }
+            
+            li {
+              float: left;
+            }
+            
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            li a:hover {
+              background-color:#4CAF50;
+            }
+            
+            .active {
+              background-color: #4CAF50;
+            }
+
+            .vid{
+                float:left;
+                width:30%;
+                height:420px;
+                border: 3px solid rgb(0, 0, 0);
+                background-color: lightgrey;  
+                border-radius: 8px;
+                margin-top: 1px;
+                box-shadow: 10px;
+                padding:3px;
+               
+            }
+            .art{
+                float:left;
+                width:68.8%;
+                height:423px;
+                margin-left: 2px;
+                margin-top: 0px;
+                border: 3px solid rgb(0, 0, 0);
+                background-color: lightgrey; 
+                border-radius: 8px; 
+                margin-top: 1px;
+                box-shadow: 10px;
+                
+            }
+            .add{
+                margin-left: 0px;
+                float:left;
+                width:20%;
+                height:420px;
+               
+                padding-left: 85px;
+                
+                background-color: lightgrey;  
+              
+            }
+            .sma
+            {
+                width:65%;
+                float:left;
+            }
+            .order {
+  position: absolute;
+  top: 50px;
+ 
+  left: 50px;
+  width: 110px;
+  line-height: 75px;
+  text-align:center;
+  opacity: 0.6;
+  filter: alpha(opacity=50);
+  background-color: rgb(77, 77, 241);
+  
+  border-radius:50%;
+  -webkit-animation: bounce .3s infinite alternate;
+  -moz-animation: bounce .3s infinite alternate;
+  animation: bounce .3s infinite alternate;
+}
+@-webkit-keyframes bounce {
+  to { -webkit-transform: scale(1.2); }
+}
+@-moz-keyframes bounce {
+  to { -moz-transform: scale(1.2); }
+}
+@keyframes bounce {
+  to { transform: scale(1.2); }
+}
+            .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color :slategray;
+  color: black;
+  text-align: center;
+}
+
+            </style>
+          
+    </head>
+    <body background="media/b.jpg">
+        <header style=" background-image: url(media/z.gif);  height: 30%;">
+            <br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br>
+           <h1  style="color:white; font-family:verdana;"> <marquee behavior="alternate">LIVE VIRTUAL CLASSES </marquee></h1>
+           <br>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="courses.html">ALL COURSES</a></li>
+                <li><a href="gallary.html">GALLARY</a></li>
+                <li><a href="registeration.html">REGISTERATION</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="student.html">STUDENT</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="quiz.html">QUIZ</a></li>
+
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <div class="spann">
+                    <div class="vid" >
+                        <p><h2>LET'S HAVE A LOOK : WHAT WE OFFER!</h2></p><br>
+                        <iframe width="98%" height="70%" src="https://www.youtube.com/embed/ojDIEGAuZaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <br><br>
+                    </div>
+                    <div class="art" >
+                        <div class="sma">
+                          <div>  
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.5255022834535!2d73.68644095073131!3d18.59541897167153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bb1002839ee5%3A0x566783465348c4e6!2sCognizant%20CDC!5e0!3m2!1sen!2sin!4v1580295200708!5m2!1sen!2sin" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                        </div>
+                     
+                   
+                    <div class="add" >
+                    <h2>ADVERTISEMENT:</h2>
+                    <div class="w3-container">
+                       <img src="media/4.jpg" height="350px" width="350px" >
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="order"><p class="jj" style=" color:#fff;">REGISTER YOURSELF NOW!!</p></div>
+            </article>
+           
+        </section>
+       
+        <footer>
+<div class="footer">
+    <p>&copy;2020 ASHUTOSH ANEJA</p>
+</div>
+        </footer>
+    </body>
+</html>
